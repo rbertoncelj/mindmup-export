@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MindMup 2 Export</title>
+    <script>
+        function handleFiles(files) {
+            var file = files[0];
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                console.log("Loaded " + Math.round(file.size / 1024) + " KiB file " + file.name)
+
+                var json = e.target.result;
+                var mup = JSON.parse(e.target.result);
+
+                console.log(mup);
+
+                var lines = [];
+                Object.keys(mup.ideas).forEach(function (key) {
+                    handleIdea(mup.ideas[key], 0, lines);
+                });
+                lines.reverse();
+                lines.forEach(function (line) {
+                    document.getElementById("csv-output").value += line + "\n";
+                })
+            };
+            reader.readAsText(file);
+        }
+
+        function handleIdea(idea, level, lines) {
+            var title = idea.title.replace("\n", " ");
+            var effort = Number(idea.attr && idea.attr.measurements ? idea.attr.measurements["Effort"] : 0);
+            if (idea.ideas) {
+                Object.keys(idea.ideas).forEach(function (key) {
+                    effort += handleIdea(idea.ideas[key], level + 1, lines);
+                });
+            }
+            var tabs = "";
+            for (i = 0; i < level; i++) {
+                tabs += "  ";
+            }
+            lines.push(tabs + title + ";" + effort);
+            return effort
+        }
+    </script>
+</head>
+
+<body>
+<h1>MindMup 2 Export</h1>
+
+<input type="file" id="input" onchange="handleFiles(this.files)">
+<p/>
+<textarea id="csv-output" style="width: 100%; height: 100vh"></textarea>
+</body>
+
+</html>

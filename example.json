@@ -1,0 +1,318 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "Mobilna Košarica",
+      "id": 1,
+      "ideas": {
+        "1": {
+          "title": "Eloterija\n(Vplačaj Online)",
+          "id": "2.2db81dc02662f3c6",
+          "ideas": {
+            "1": {
+              "title": "Landing page with basket ID",
+              "id": "7.2db81dc02662f3c6",
+              "ideas": {},
+              "attr": {
+                "position": [
+                  121,
+                  -126,
+                  1
+                ],
+                "measurements": {
+                  "Effort": "1"
+                }
+              }
+            },
+            "2": {
+              "title": "Rest request to Mobile API",
+              "id": "11.2db81dc02662f3c6",
+              "ideas": {},
+              "attr": {
+                "measurements": {
+                  "Effort": "1"
+                }
+              }
+            },
+            "3": {
+              "title": "Create basket from JSON",
+              "id": "14.2db81dc02662f3c6",
+              "ideas": {
+                "1": {
+                  "title": "Loto & Super Loto",
+                  "id": "19.2db81dc02662f3c6",
+                  "attr": {
+                    "measurements": {
+                      "Effort": "2"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Eurojackpot",
+                  "id": "20.2db81dc02662f3c6",
+                  "ideas": {},
+                  "attr": {
+                    "measurements": {
+                      "Effort": "2"
+                    }
+                  }
+                },
+                "3": {
+                  "title": "3x3",
+                  "id": "22.2db81dc02662f3c6",
+                  "attr": {
+                    "measurements": {
+                      "Effort": "2"
+                    }
+                  }
+                },
+                "4": {
+                  "title": "TikiTaka",
+                  "id": "23.2db81dc02662f3c6",
+                  "attr": {
+                    "measurements": {
+                      "Effort": "2"
+                    }
+                  }
+                },
+                "5": {
+                  "title": "Viking",
+                  "id": "24.2db81dc02662f3c6",
+                  "attr": {
+                    "measurements": {
+                      "Effort": "2"
+                    }
+                  }
+                },
+                "6": {
+                  "title": "Mocks",
+                  "id": "40.2db81dc02662f3c6",
+                  "attr": {
+                    "measurements": {
+                      "Effort": "1"
+                    }
+                  }
+                }
+              }
+            },
+            "4": {
+              "title": "Redirect to basket.seam",
+              "id": "15.2db81dc02662f3c6",
+              "attr": {
+                "measurements": {
+                  "Effort": "0"
+                }
+              }
+            },
+            "5": {
+              "title": "Dokumentacija",
+              "id": "25.2db81dc02662f3c6",
+              "attr": {
+                "measurements": {
+                  "Effort": "2"
+                }
+              }
+            },
+            "6": {
+              "title": "Testiranje",
+              "id": "28.2db81dc02662f3c6",
+              "attr": {
+                "measurements": {
+                  "Effort": "3"
+                }
+              }
+            },
+            "1.5": {
+              "title": "Login if necessary",
+              "id": "16.2db81dc02662f3c6",
+              "attr": {
+                "measurements": {
+                  "Effort": "2"
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "Modal",
+                  "id": "18.2db81dc02662f3c6",
+                  "attr": {
+                    "position": [
+                      194,
+                      4,
+                      1
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Načrtovanje",
+          "id": "75.2db81dc02662f3c6",
+          "attr": {
+            "measurements": {
+              "Effort": "1.5"
+            }
+          }
+        },
+        "-1": {
+          "title": "Mobile API",
+          "id": "6.2db81dc02662f3c6",
+          "ideas": {
+            "1": {
+              "title": "Basket endpoint",
+              "id": "29.2db81dc02662f3c6",
+              "ideas": {
+                "1": {
+                  "title": "Receive basket DTO",
+                  "id": "30.2db81dc02662f3c6",
+                  "ideas": {
+                    "1": {
+                      "title": "Persist to database",
+                      "id": "32.2db81dc02662f3c6",
+                      "attr": {}
+                    }
+                  }
+                },
+                "2": {
+                  "title": "Retrieve by basket ID",
+                  "id": "39.2db81dc02662f3c6"
+                }
+              },
+              "attr": {
+                "measurements": {
+                  "Effort": "2"
+                }
+              }
+            },
+            "2": {
+              "title": "Podatkovni model",
+              "id": "35.2db81dc02662f3c6",
+              "ideas": {
+                "1": {
+                  "title": "Basket",
+                  "id": "36.2db81dc02662f3c6",
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "Ticket template",
+                  "id": "37.2db81dc02662f3c6",
+                  "attr": {}
+                }
+              },
+              "attr": {
+                "measurements": {
+                  "Effort": "1"
+                }
+              }
+            },
+            "3": {
+              "title": "Dokumentacija",
+              "id": "41.2db81dc02662f3c6",
+              "attr": {
+                "measurements": {
+                  "Effort": "0.5"
+                }
+              }
+            },
+            "4": {
+              "title": "Infinum support",
+              "id": "42.2db81dc02662f3c6",
+              "attr": {
+                "position": [
+                  98,
+                  123,
+                  1
+                ],
+                "measurements": {
+                  "Effort": "1"
+                }
+              }
+            },
+            "0.5": {
+              "title": "Basket price preview endpoint",
+              "id": "47.2db81dc02662f3c6",
+              "attr": {
+                "position": [
+                  86,
+                  -229,
+                  2
+                ]
+              },
+              "ideas": {
+                "1": {
+                  "title": "Rececive basket DTO",
+                  "id": "57.2db81dc02662f3c6",
+                  "ideas": {
+                    "1": {
+                      "title": "Calculate price",
+                      "ideas": {
+                        "1": {
+                          "title": "Loto & Super Loto",
+                          "attr": {
+                            "measurements": {
+                              "Effort": "3"
+                            }
+                          },
+                          "id": "67.2db81dc02662f3c6"
+                        },
+                        "2": {
+                          "title": "Eurojackpot",
+                          "attr": {
+                            "measurements": {
+                              "Effort": "2"
+                            }
+                          },
+                          "ideas": {},
+                          "id": "68.2db81dc02662f3c6"
+                        },
+                        "3": {
+                          "title": "3x3",
+                          "attr": {
+                            "measurements": {
+                              "Effort": "2"
+                            }
+                          },
+                          "id": "69.2db81dc02662f3c6"
+                        },
+                        "4": {
+                          "title": "TikiTaka",
+                          "attr": {
+                            "measurements": {
+                              "Effort": "2"
+                            }
+                          },
+                          "id": "70.2db81dc02662f3c6"
+                        },
+                        "5": {
+                          "title": "Viking",
+                          "attr": {
+                            "measurements": {
+                              "Effort": "2"
+                            }
+                          },
+                          "id": "71.2db81dc02662f3c6"
+                        }
+                      },
+                      "id": "66.2db81dc02662f3c6",
+                      "attr": {}
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {}
+        }
+      }
+    }
+  },
+  "title": "Mobilna Košarica",
+  "attr": {
+    "measurements-config": [
+      "Effort"
+    ]
+  },
+  "links": []
+}
