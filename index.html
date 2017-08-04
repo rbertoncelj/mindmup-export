@@ -31,6 +31,9 @@
         function handleIdea(idea, level, lines) {
             var title = idea.title.replace("\n", " ");
             var effort = Number(idea.attr && idea.attr.measurements ? idea.attr.measurements["Effort"] : 0);
+            if (isNaN(effort)) {
+                effort = 0;
+            }
             if (idea.ideas) {
                 Object.keys(idea.ideas).forEach(function (key) {
                     effort += handleIdea(idea.ideas[key], level + 1, lines);
